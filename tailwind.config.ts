@@ -1,14 +1,27 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config}*/
 module.exports = {
-  darkMode: ["class"],
+  darkMode: "class",
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   theme: {
+    fontSize: {
+      sm: '0.8rem',
+      base: '1rem',
+      xl: '1.25rem',
+      '2xl': '2rem',
+      '3xl': '2.5rem',
+      '4xl': '3.5rem',
+      '5xl': '4.3rem',
+    },
     container: {
+      fontFamily: {
+        display: ['Pally', 'Comic Sans MS', 'sans-serif'],
+        body: ['Pally', 'Comic Sans MS', 'sans-serif'],
+      },
       center: true,
       padding: "2rem",
       screens: {
@@ -17,6 +30,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        "grey": "2c2c2c",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

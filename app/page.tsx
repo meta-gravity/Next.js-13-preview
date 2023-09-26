@@ -1,9 +1,19 @@
-import Image from 'next/image'
+import Header from '@/components/Header'
+import Hero from '@/components/Hero'
+import ButtonDown from '@/components/ui/ButtonDown'
+import ProductHunt from '@/components/ui/ProductHunt'
+import IMage from '@/components/ui/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      
+    <main className="">
+      <Header />
+      <ProductHunt />
+      <Hero />
+      <ButtonDown />
+
+      <IMage />
+      <img src="/public/img.jpg" alt="" />
     </main>
   )
 }
