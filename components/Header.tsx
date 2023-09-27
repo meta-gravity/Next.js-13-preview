@@ -11,6 +11,9 @@ export default function Header() {
                 <h1 className="flex text-2xl font-bold hover:text-[#020516] cursor-pointer">
                     Papermark
                 </h1>
+                <h2>
+                    hfyuftfitfitic
+                </h2>
                 
                 <div className="flex top-0 right-0 justify-end space-x-4">
                     <Link href="https://www.github.com">
